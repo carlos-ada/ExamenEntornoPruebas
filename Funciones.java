@@ -45,6 +45,5 @@ public class Funcion2 {
 		// TODO Auto-generated method stub
 		return null;
 	}
-}
 
 }
