@@ -13,7 +13,7 @@ public class Funcion1 {
 			}else {
 				resp=false;
 			}
-			return resp;
+			return n % 5 == 0;
 		}
 public class Funcion2 {
 	
@@ -47,6 +47,9 @@ public class Funcion2 {
 	}
 public class Funcion3 {
 
+public static void main(String[] args) {
+		System.out.println(Funcion3(200));
+	}
 	public static int Funcion3(int num) {
 
 
@@ -71,24 +74,22 @@ public class Funcion3 {
 public class Funcion4 {
 	public static void main(String[] args) {
 
+			String[] CadenaNombres = { "Carlos Villar", "Javier Melendez", "Juan Jesus", "Carlos Garcia" };
 
-		String[] CadenaNombres = { "Javier Melendez", "Carlos Garcia", "Carlos Villar", "Juan Jesus" };
+			System.out.println(Funcion4(CadenaNombres));
 
-		System.out.println(Funcion4(CadenaNombres));
-
-        }
-		public static String Funcion4(String[] CadenaNombres) {
-	
-			String CadenaConcatenada = null;
-			for (int i = 0; i < CadenaNombres.length; i++) {
-	
-				CadenaConcatenada = CadenaNombres[0] + "-" + CadenaNombres[1] + "-" + CadenaNombres[2] + "-"
-						+ CadenaNombres[3];
+	        }
+			public static String Funcion4(String[] CadenaNombres) {
+		
+				String CadenaConcatenada = null;
+				for (int i = 0; i < CadenaNombres.length; i++) {
+		
+					CadenaConcatenada = CadenaNombres[0] + "-" + CadenaNombres[1] + "-" + CadenaNombres[2] + "-"
+							+ CadenaNombres[3];
+				}
+				CadenaConcatenada = CadenaConcatenada.replaceAll("[AaEeIiOoUu]", "");
+				CadenaConcatenada = CadenaConcatenada.replaceAll("[A-Z]", "");
+				System.out.println(CadenaConcatenada);
+				return CadenaConcatenada;
 			}
-			CadenaConcatenada = CadenaConcatenada.replaceAll("[AaEeIiOoUu]", "");
-			CadenaConcatenada = CadenaConcatenada.replaceAll("[A-Z]", "");
-			System.out.println(CadenaConcatenada);
-			return CadenaConcatenada;
-		}
-
-}
+	}
