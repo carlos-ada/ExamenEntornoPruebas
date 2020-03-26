@@ -13,6 +13,6 @@ public class Funcion1 {
 			}else {
 				resp=false;
 			}
-			return resp;
+			return n % 5 == 0;
 		}
 }
