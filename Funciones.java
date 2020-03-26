@@ -13,7 +13,7 @@ public class Funcion1 {
 			}else {
 				resp=false;
 			}
-			return resp;
+			return n % 5 == 0;
 		}
 public class Funcion2 {
 	
@@ -46,7 +46,9 @@ public class Funcion2 {
 		return null;
 	}
 public class Funcion3 {
-
+	public static void main(String[] args) {
+		System.out.println(Funcion3(200));
+	}
 	public static int Funcion3(int num) {
 
 
@@ -91,7 +93,8 @@ public class Funcion4 {
 			return CadenaConcatenada;
 		}
 public class Funcion5{
-
+	public static void main(String[] args) {
+	}
 
 	public  int Funcion5(int [] num) {
 
@@ -105,6 +108,7 @@ public class Funcion5{
 		}
 		return sum;
 	}
+}
 public class Funcion6 {
 
 	    public static void main(String[] args) {
@@ -139,6 +143,4 @@ public class Funcion6 {
 		return z;
 
         }
-
-
 }
