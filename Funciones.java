@@ -144,53 +144,58 @@ public class Funcion6 {
         }
 public class Funcion7 {
 
-public static void main(String[] args) {
-		
-	}
-	 public String Funcion7 (String[] listaDeCadenas) {
+    public static void main(String[] args) {
+        String [] listaDeCadenas = {"Javier", "Carlos", "Limonxelo", "Carlitos"};
+        System.out.println(Funcion7(listaDeCadenas));
+    }
+
+     public static String Funcion7(String[] listaDeCadenas) {
 
 
-	        if (listaDeCadenas != null) {
+            if (listaDeCadenas != null) {
 
-	            for (int i = 0; i < listaDeCadenas.length; i++) {
+                for (int i = 0; i < listaDeCadenas.length; i++) {
 
-	                String cadena = listaDeCadenas[i];
+                    String cadena = listaDeCadenas[i];
 
-	                if (!cadena.equals("")){
-	                    listaDeCadenas[i] = cadena.substring(3, 6);
-	                }else {
-	                	cadena ="";
-	                }
-	                		
-	            }
+                    if (!cadena.equals("")){
+                        listaDeCadenas[i] = cadena.substring(3, 6);
+                    }else {
+                        cadena ="";
+                    }
 
-	        } else {
-	            listaDeCadenas = null;
-	        }
+                }
 
-	        return Arrays.toString(listaDeCadenas);
+            } else {
+                listaDeCadenas = null;
+            }
 
-	    	}
+            return Arrays.toString(listaDeCadenas);
+
+            }
+}
+
 public class Funcion8 {
 
 	public static void main(String[] args) {
-		
-	}
-
-	public boolean Funcion8(String[] alumnos, int[][] tiemposDeTrabajos){	       
-		int t = 400;
-        int sumatorio = 0;
-        boolean result = true;
-        for(int i = 0; i < tiemposDeTrabajos.length; i++){
-            sumatorio = 0;
-            for(int j = 0; j < tiemposDeTrabajos.length; j++){
-                sumatorio += tiemposDeTrabajos[j][i];
-            }
-            if(sumatorio<=t){
-                result = false;
-            }
+        String [] alumnos = {"Linomenchelo","Cav1nem","Lenendi","Livlad"};
+        int [][] tiemposDeTrabajos = { {0,0,0,0} ,  {4,0,3,2}};
+        System.out.println(Funcion8(alumnos, tiemposDeTrabajos));
+    }
+public static boolean Funcion8(String[] alumnos, int[][] tiemposDeTrabajos){
+            int t = 400;
+    int sumatorio = 0;
+    boolean result = true;
+    for(int i = 0; i < tiemposDeTrabajos.length; i++){
+        sumatorio = 0;
+        for(int j = 0; j < tiemposDeTrabajos.length; j++){
+            sumatorio += tiemposDeTrabajos[j][i];
         }
-        return result;
+        if(sumatorio<=t){
+            result = false;
+        }
+    }
+    return result;
 
-}
+    }
 }
